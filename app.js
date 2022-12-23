@@ -117,7 +117,7 @@ var quizApp = function () {
 
 	this.showResult = function (scr) {
 		$("#result").addClass('result');
-		$("#result").html("<h1 class='res-header'>Total Score: &nbsp;" + scr + '/' + totalque + "</h1>");
+		$("#result").html("<h1 class='res-header'>एकूण गुण: &nbsp;" + scr + '/' + totalque + "</h1>");
 		for (var j = 0; j < totalque; j++) {
 			var res;
 			if (quiz.JS[j].score == 0) {
@@ -127,8 +127,8 @@ var quizApp = function () {
 			}
 			$("#result").append(
 				'<div class="result-question"><span>Q ' + quiz.JS[j].id + '</span> &nbsp;' + '<img src = '+ quiz.JS[j].images +' id = "img" width = "200" height = "200" />'+'</div>' +
-				'<div><b>Correct answer:</b> &nbsp;' + quiz.JS[j].answer + '</div>' +
-				'<div><b>Your answer:</b> &nbsp;' + quiz.JS[j].YourAnswer + '</div>' +
+				'<div><b>योग्य उत्तर:</b> &nbsp;' + quiz.JS[j].answer + '</div>' +
+				'<div><b>तुमचे उत्तर:</b> &nbsp;' + quiz.JS[j].YourAnswer + '</div>' +
 				'<div class="last-row"><b>Score:</b> &nbsp;' + res +
 
 				'</div>'
